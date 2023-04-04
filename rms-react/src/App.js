@@ -25,14 +25,17 @@
 // export default App;
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Main from "./components/user/Main"
+import Student from './pages/Student';
+import Addstudent from './pages/Addstudent';
+// import Main from "./components/user/Main"
 
 const App = () => {
   return (
     <>
     <Routes>
       <>
-      <Route path='/' element= { <Main/> } />
+      <Route path='/' element= { <Student/> } />
+      <Route path='/add-student' element= {<Addstudent/>}></Route>
       </>
 
 </Routes> 
